@@ -1,0 +1,8 @@
+<div class="description">
+  <p [ngClass]="{'description-content': !expanded, 'description-content-expanded': expanded}"
+     #descriptionContent>{{ description }}</p>
+
+  <a *ngIf="checkOverflow(descriptionContent)" class="description-toggle" (click)="toggleExpanded()">
+  {{ expanded == true ? "more ..." : "less ..."}}
+  </a>
+</div>

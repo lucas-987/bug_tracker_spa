@@ -1,0 +1,32 @@
+table {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 20px;
+
+  th {
+    padding: 15px;
+    border-top: 1px solid #adb5bd;
+    background-color: #dee2e6;
+  }
+
+  th:first-child {
+    border-left: 1px solid #adb5bd;
+  }
+
+  th:last-child {
+    border-right: 1px solid #adb5bd;
+  }
+
+  thead:first-child {
+      tr:first-child {
+          th:first-child {
+              border-radius: 4px 0 0 0;
+          }
+
+          th:last-child {
+              border-radius: 0 0 0 4px;
+          }
+      }
+  }
+}

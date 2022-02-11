@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Priority</th>
+      <th>Number of report</th>
+      <th>Due on</th>
+      <th>Created on</th>
+      <th>Fixed on</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr app-bug *ngFor="let bug of bugs" [bug]="bug" (onDeleteBug)="deleteBug(bug)" ></tr>
+  </tbody>
+</table>
+
+<a routerLink="/add">Add</a>

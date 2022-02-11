@@ -1,0 +1,12 @@
+<td class="bug-title">{{ bug.title }}</td>
+<td class="bug-description">{{ bug.description }}</td>
+<td class="bug-status">{{ bug.status }}</td>
+<td class="bug-priority">{{ bug.priority }}</td>
+<td class="bug-nbreport">{{ bug.nbReport }}</td>
+<td class="bug-duedate">{{ bug.dueDate }}</td>
+<td class="bug-createddate">{{ bug.createdDate }}</td>
+<td class="bug-fixeddate">{{ bug.fixedDate }}</td>
+<td class="">
+  <a (click)="deleteButtonClicked(bug)"><img src="assets/delete_red.svg" /></a>
+  <a routerLink="/update/{{bug.id}}">Update</a>
+</td>

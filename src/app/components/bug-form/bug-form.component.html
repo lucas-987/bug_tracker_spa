@@ -1,0 +1,29 @@
+<form (ngSubmit)="onSubmit()">
+  <label for="title">Title :</label>
+  <input type="text" name="title" [(ngModel)]="title" placeholder="Title" />
+
+  <label for="description">Description :</label>
+  <textarea name="description" [(ngModel)]="description" placeholder="Description ..." ></textarea>
+
+  <label for="status">Status :</label>
+  <input type="number" name="status" [(ngModel)]="status" placeholder="Status" />
+
+  <label for="priority">Priority :</label>
+  <input type="number" name="priority" [(ngModel)]="priority" placeholder="Priority" />
+
+  <label for="nbreport">Number of reports :</label>
+  <input type="number" name="nbreport" [(ngModel)]="nbReport" placeholder="Number of reports" />
+
+  <!-- DATES
+  <label for="title">Title :</label>
+  <input type="text" name="title" placeholder="Title" />
+
+  <label for="title">Title :</label>
+  <input type="text" name="title" placeholder="Title" />
+
+  <label for="title">Title :</label>
+  <input type="text" name="title" placeholder="Title" />
+  -->
+
+  <button type="submit">{{ update ? "Update" : "Create" }}</button>
+</form>

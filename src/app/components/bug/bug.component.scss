@@ -1,0 +1,22 @@
+td {
+  padding: 15px;
+  border-top: 1px solid #adb5bd;
+  border-bottom: 1px solid #adb5bd;
+}
+
+td:first-child {
+  border-left: 1px solid #adb5bd;
+}
+
+td:last-child {
+  border-right: 1px solid #adb5bd;
+}
+
+img {
+    height: 25px;
+}
+
+.bug-title {
+    font-size: 1em;
+    font-weight: 600;
+}
